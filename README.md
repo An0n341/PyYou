@@ -5,6 +5,7 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Github All Releases](https://img.shields.io/github/downloads/An0n341/PyYou/total.svg)]()
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/An0n341/PyYou)
 ![GitHub forks](https://img.shields.io/github/forks/An0n341/PyYou?style=social)
 ![GitHub Repo stars](https://img.shields.io/github/stars/An0n341/PyYou?style=social)
 
