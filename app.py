@@ -1,3 +1,4 @@
+import threading
 from pytube import YouTube, Playlist, exceptions
 import tkinter as tk
 from tkinter import ttk
@@ -62,7 +63,7 @@ class App(tk.Tk):
         self.container_choices.pack(pady=10)
 
         # buttons app
-        self.download = tk.Button(self.content_app, text="Download", bg="#E58181", fg="white", borderwidth=0, width=28, height=1, font=("Ubuntu 16"), command=self.download).pack(pady=20, side=tk.BOTTOM)
+        self.download = tk.Button(self.content_app, text="Download", bg="#E58181", fg="white", borderwidth=0, width=28, height=1, font=("Ubuntu 16"), command=lambda: threading.Thread(target=self.download).start()).pack(pady=20, side=tk.BOTTOM)
         self.path = tk.Button(self.content_app, text="Select file Path", bg="#7FC887", fg="white", borderwidth=0, width=28, height=1, font=("Ubuntu 16"), command=self.select_directory).pack(side=tk.BOTTOM)
 
         self.content_app.grid(row=1, sticky="news")
